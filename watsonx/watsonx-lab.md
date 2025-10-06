@@ -134,7 +134,7 @@ You can chat with the foundation model to see how the model handles dialog or qu
 
 1. Click the **Chat** tab.
 2. Click the **Create a chart of the top NLP use-cases for foundation models** sample.
-3. Click **Clear chat** to start a new chat session.
+3. Click **Clear chat**, and then click **Clear** to confirm that you want to start a new chat session.
 4. Click the **Edit system prompt** icon ![Edit system prompt icon](images/system-prompt-icon.svg "Edit system prompt icon").
 5. Provide the foundation model with specific information. For example:
    ```
