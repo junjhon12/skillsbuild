@@ -28,7 +28,7 @@ In this lab, you will complete the following tasks:
 - Compare the strengths and weaknesses of different models.
 - Test different configuration parameters to how they influence a model in generating output.
 - Differentiate zero-shot prompting, one-shot prompting, and few-shot prompting.
-- Generate list and JSON files with foundation models.
+- Generate lists with foundation models.
 - Save prompts and prompt sessions.
 - Restore a saved prompt to an earlier state via prompt history.
 - Save prompts to a Jupyter notebook and work with the Jupyter notebook.
@@ -40,8 +40,7 @@ In this lab, you will complete the following tasks:
 # Contents
 
 - [Part 1: Use the Prompt Lab](#task01)
-- [Part 2: Explore prompt results in another format](#task02)
-- [Part 3: Work with prompts in a Jupyter notebook](#task03)
+- [Part 2: Work with prompts in a Jupyter notebook](#task02)
 
 # Summary
 
@@ -224,73 +223,11 @@ You can type your prompt in a structured format. The structured format is helpfu
 
 <a name="task02"></a>
 
-# Part 2: Explore prompt results in another format
-
-In this task, you will use the Prompt Lab to generate a simple JSON file, experimenting with different models to see how they handle structured output. While some models excel in generating natural language text, others are better suited for producing valid JSON outputs. Additionally, you will explore the use of Stop sequences to control the model's output and prevent unwanted text generation.
-
-**Note:** If you do not see the models used in this task in the Prompt Lab, refer to the [Foundation model lifecycle](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-model-lifecycle.html?context=wx) topic to find the recommended alternative model.
-
-[Back to the top](#top)
-
-## Task 2a: Generate a response with a granite model
-
-Follow these steps to prompt a granite foundation model:
-
-1. In the Prompt Lab, click **+** to start a new prompt in Structured mode.
-2. Verify that that the **granite-3-3-8b-instruct** model is selected.
-3. In the _Model parameters_, set the following parameters:
-    - **Decoding** to **Sampling**
-    - **Max tokens** to `200`
-    - **Min tokens** to `0`
-    - **Temperature** to `0.7`
-    - **top K** to `50`
-    - **Top P** to `0.5`
-    - **Repetition penalty** to `1.2`
-4. In the _Try_ section, copy and paste the following text into the Input field:
-
-    ```
-    Write the steps to call someone at 201-555-1212 on an iPhone, starting each step with 'Step X: '.
-
-    ```
-
-1. Click **Generate**. Notice the output states “\[The input was rejected for containing personal information\]”
-2. Disable **AI guardrails on**. This is necessary to pass personal information in the input text.
-3. Click **Generate**. This result shows the strengths of the *granite* model in that it responded with a natural language output. Notice that there is additional text beyond the steps. In the next task, you stop the response before the additional text.</br>![Response](images/response.png "Response")
-5. Save your work as a prompt session with the name:
-   ```
-   granite model prompt
-   ```
-
-## Task 2b: Specify stopping criteria
-
-Follow these steps to specify a stop sequence:
-
-1. Click the **Model parameters** icon ![Model parameters icon](images/parameters.svg "Model parameters icon").
-1. Type the following keystrokes in the *Stop sequences* field: `press the return or enter key twice`<br/>![Stop sequence characters](images/stop-sequence-02.png "Stop sequence characters")
-1. Click the **+** icon to add the sequence. The following image shows the **Stop sequences** field:</br>![Stop sequence](images/stop-sequence-new.png "Stop sequence")
-1. Click **Generate**. The following image shows the output which no longer includes the extra text as the model recognizes the stop sequence and ceases to generate anything after that sequence.<br/>
-   <img src="images/response-stop.png" width="100%" alt="Output image" title="Output image">
-1. Save your work as a prompt session with the name:
-   ```
-   Stop criteria prompt
-   ```
-
-[Back to the top](#top)
-
-### Explore further
-
-- Remove the stop sequence by clicking **X**. What if you specify just one curly right bracket instead? Does this criteria behave as expected?
-- Remove the previous stop sequence. What if you specify 2 curly right brackets (with no carriage return in between), using this stop sequence: `}}`. Does this criteria behave as expected?
-
-[Back to the top](#top)
-
-<a name="task03"></a>
-
-# Part 3: Work with prompts in a Jupyter notebook
+# Part 2: Work with prompts in a Jupyter notebook
 
 You have been working with prompt engineering via the console. However, data and AI engineers work programmatically. In this task, you will create a Jupyter notebook for a prompt, and work with prompts in a Jupyter notebook in watsonx.ai.
 
-## Task 3a: Create an API key
+## Task 2a: Create an API key
 
 To run a Jupyter notebook you will need your API key. If do not have an API key, follow these steps to create an API key:
 
@@ -302,25 +239,25 @@ Now that you have the key, you are ready to work with the Jupyter notebook. For 
 
 [Back to the top](#top)
 
-## Task 3b: Save a prompt as a Jupyter notebook
+## Task 2b: Save a prompt as a Jupyter notebook
 
 As seen previously, you can save your work in three formats: a prompt template, a prompt session, and a standard notebook. Follow these steps to save your work as a Jupyter notebook.
 
 1. From the watsonx home screen, verify that your sandbox project is selected as highlighted in the following image:<br/>
    ![watsonx home screen](images/home-screen.png "watsonx home screen")
 2. Click **Open Prompt Lab**.
-3. Click the **Saved prompts** icon ![Saved prompts icon](images/saved-prompts-icon.svg "Saved prompts icon"), and open the **Structured mode prompt**.
+3. Click the **Saved prompts** icon ![Saved prompts icon](images/saved-prompts-icon.svg "Saved prompts icon"), and open the **Structured mode prompts**.
 4. Click the **History** icon ![History icon](images/history.svg "History icon") to open the history of this prompt session.
 5. If the most recent version is not select, select the **Now** version.
 6. Click **Save work > Save as**.
 7. Select **Standard notebook**.
 8. For the name, type:
    ```
-   structured_prompts_notebook
+   structure_prompts_notebook
    ```
 9. For the description, type:
    ```
-   Jupyter notebook - Structured prompt
+   Jupyter notebook - structured prompt
    ```
 10. Select the **View in project after saving** option.
 11. Click **Save**. The Jupyter notebook opens in your project.<br/>
@@ -328,7 +265,7 @@ As seen previously, you can save your work in three formats: a prompt template, 
 
 [Back to the top](#top)
 
-## Task 3c: Edit and run the notebook
+## Task 2c: Edit and run the notebook
 
 The Prompt Lab generated a notebook for you. Follow these steps to tweak and run the code in the notebook:
 
@@ -354,7 +291,7 @@ In this lab, you learned how to complete the following tasks:
 - Compare the strengths and weaknesses of different models.
 - Test different configuration parameters to how they influence a model in generating output.
 - Differentiate zero-shot prompting, one-shot prompting, and few-shot prompting.
-- Generate list and JSON files with foundation models.
+- Generate lists with foundation models.
 - Save prompts and prompt sessions.
 - Restore a saved prompt to an earlier state via prompt history.
 - Save prompts to a Jupyter notebook and working with the Jupyter notebook.
