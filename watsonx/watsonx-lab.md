@@ -28,7 +28,7 @@ In this lab, you will complete the following tasks:
 - Compare the strengths and weaknesses of different models.
 - Test different configuration parameters to how they influence a model in generating output.
 - Differentiate zero-shot prompting, one-shot prompting, and few-shot prompting.
-- Generate list and JSON files with foundation models.
+- Generate lists with foundation models.
 - Save prompts and prompt sessions.
 - Restore a saved prompt to an earlier state via prompt history.
 - Save prompts to a Jupyter notebook and work with the Jupyter notebook.
@@ -45,7 +45,7 @@ In this lab, you will complete the following tasks:
 
 # Summary
 
-At the end of this lab, you will be able to open a new Prompt Lab session and navigate the watsonx.ai interface, including selecting and experimenting with different foundation models. You will understand the importance of prompt engineering and how to modify prompts familiar with zero-shot, one-shot, and few-shot prompting techniques and how to use them effectively. Additionally, you will learn to adjust inference parameters such as temperature, top P, and top K to influence model outputs. You will also be able to generate structured outputs like lists and JSON, and use stop sequences to control model generation. Finally, you will know how to save prompts and prompt sessions, and understand the importance of testing model outputs, especially for code-based tasks.
+At the end of this lab, you will be able to open a new Prompt Lab session and navigate the watsonx.ai interface, including selecting and experimenting with different foundation models. You will understand the importance of prompt engineering and how to modify prompts familiar with zero-shot, one-shot, and few-shot prompting techniques and how to use them effectively. Additionally, you will learn to adjust inference parameters such as temperature, top P, and top K to influence model outputs. You will also be able to generate structured outputs like lists, and use stop sequences to control model generation. Finally, you will know how to save prompts and prompt sessions, and understand the importance of testing model outputs, especially for code-based tasks.
 
 <a name="task01"></a>
 
@@ -226,7 +226,7 @@ You can type your prompt in a structured format. The structured format is helpfu
 
 # Part 2: Explore prompt results in another format
 
-In this task, you will use the Prompt Lab to generate a simple JSON file, experimenting with different models to see how they handle structured output. While some models excel in generating natural language text, others are better suited for producing valid JSON outputs. Additionally, you will explore the use of Stop sequences to control the model's output and prevent unwanted text generation.
+In this task, you will use the Prompt Lab to generate a simple list, Additionally, you will explore the use of Stop sequences to control the model's output and prevent unwanted text generation.
 
 **Note:** If you do not see the models used in this task in the Prompt Lab, refer to the [Foundation model lifecycle](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-model-lifecycle.html?context=wx) topic to find the recommended alternative model.
 
@@ -354,7 +354,7 @@ In this lab, you learned how to complete the following tasks:
 - Compare the strengths and weaknesses of different models.
 - Test different configuration parameters to how they influence a model in generating output.
 - Differentiate zero-shot prompting, one-shot prompting, and few-shot prompting.
-- Generate list and JSON files with foundation models.
+- Generate lists with foundation models.
 - Save prompts and prompt sessions.
 - Restore a saved prompt to an earlier state via prompt history.
 - Save prompts to a Jupyter notebook and working with the Jupyter notebook.
