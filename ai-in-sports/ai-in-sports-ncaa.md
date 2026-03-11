@@ -248,7 +248,7 @@ Now that the experiment run is completed, follow these steps to explore the pipe
 1. On the *Pipeline details* page, select **Feature summary**. Refer to the [College Basketball dataset](https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset/data) for complete details on each of the columns in the dataset. Review the following features:
 
    - **BARTHAG** estimates the probability that a team would beat an average Division I team.
-   - **WAB** measures a team's resume strength by comparing their actual record against how an average bubble team (that is, a team on the verge of making or missing the tournament) would perform against the same schedule.
+   - **WAB** measures a team's record strength by comparing their actual record against how an average bubble team (that is, a team on the verge of making or missing the tournament) would perform against the same schedule.
    - **SEED** is the official ranking (1 through 16) assigned to a team by the NCAA Selection Committee when the tournament bracket is created.
    - **G** stands for games that are played and represents the total number of games a team that is played during the season (typically including the regular season and conference tournaments).
 
@@ -257,7 +257,7 @@ Now that the experiment run is completed, follow these steps to explore the pipe
    | Feature | Type | Focus | Use Case |
    | :--- | :--- | :--- | :--- |
    | **BARTHAG** | Efficiency | Predicts future performance and strength. | Best for predicting "upsets." |
-   | **WAB** | Achievement | Measures the quality of the resume. | Best for predicting if a team gets in. |
+   | **WAB** | Achievement | Measures the quality of the record. | Best for predicting if a team gets in. |
    | **SEED** | Rank | The committee's official "starting line." | Best for predicting how far a team goes. |
    | **G** | Volume | The total number of games played. | Best for normalizing per-game stats. |
 
@@ -472,7 +472,7 @@ Now that the experiment run is completed, follow these steps to explore the pipe
 1. On the *Pipeline details* page, select **Feature summary**. Review the following features:
 
    - **BARTHAG** estimates the probability that a team would beat an average Division I team.
-   - **WAB** measures a team's resume strength by comparing their actual record against how an average bubble team (that is, a team on the verge of making or missing the tournament) would perform against the same schedule.
+   - **WAB** measures a team's record strength by comparing their actual record against how an average bubble team (that is, a team on the verge of making or missing the tournament) would perform against the same schedule.
    - **SEED** is the official ranking (1 through 16) assigned to a team by the NCAA Selection Committee when the tournament bracket is created.
    - **G** stands for games that are played and represents the total number of games a team that is played during the season (typically including the regular season and conference tournaments).
 
@@ -481,7 +481,7 @@ Now that the experiment run is completed, follow these steps to explore the pipe
    | Feature | Type | Focus | Use Case |
    | :--- | :--- | :--- | :--- |
    | **BARTHAG** | Efficiency | Predicts future performance and strength. | Best for predicting "upsets." |
-   | **WAB** | Achievement | Measures the quality of the resume. | Best for predicting if a team gets in. |
+   | **WAB** | Achievement | Measures the quality of the record. | Best for predicting if a team gets in. |
    | **SEED** | Rank | The committee's official "starting line." | Best for predicting how far a team goes. |
    | **G** | Volume | The total number of games played. | Best for normalizing per-game stats. |
 
