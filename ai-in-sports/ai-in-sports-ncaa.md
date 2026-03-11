@@ -281,7 +281,28 @@ The following image shows the model details.
 
 Now that you saved the best performing model to the project, follow these steps to deploy and test the model.
 
-## Task 7a: Promote the model to a deployment space
+## Task 7a: Promote the assets to a deployment space
+
+1. Close the windows to return to the *Experiment summary* page.
+1. Click the project name to return to the _Assets_ tab.
+2. Select all of the CSV files that you uploaded to the project in Task 4.
+3. Click **Promote to space**.
+4. For the _Target space_, either select an existing space, or follow these steps to create a new space:
+    1. Select **Create a new deployment space**.
+    2. Provide a name for the new space; for example, `AI in sports deployment space`.
+    3. For the _Deployment stage_, select **Testing**.
+    4. For the _watsonx.ai Runtime_, select your **watsonx.ai Runtime** service.
+    5. Click **Create**. The new deployment space is selected for the target space.
+5. Click **Promote**.
+1. Click **Close** to return to the *Assets* tab.
+
+The following image shows the *Promote to space* page with the CSV files selected.
+
+<img src="../watsonx/images/promote-to-space-csv-files.png">
+
+[Back to the top](#top)
+
+## Task 7b: Promote the model to a deployment space
 
 1. Close the windows to return to the *Experiment summary* page.
 1. Click the project name to return to the _Assets_ tab.
@@ -297,7 +318,7 @@ The following image shows the model to be promoted to the space.
 
 [Back to the top](#top)
 
-## Task 7b: Create a model deployment
+## Task 7c: Create a model deployment
 
 1. Click **New deployment**.
 2. For the _Deployment type_, select **Online**.
@@ -311,7 +332,7 @@ The following image shows the model deployment in the space.
 
 [Back to the top](#top)
 
-## Task 7c: Test the deployed model
+## Task 7d: Test the deployed model
 
 1. On the _API reference_ tab, review the endpoints and code snippets to incorporate this deployed model in your application.
 1. Click the **Test** tab.
@@ -483,28 +504,7 @@ The following image shows the model details.
 
 Now that you saved the best performing model to the project, follow these steps to deploy and test the model.
 
-## Task 10a: Promote the assets to a deployment space
-
-1. Close the windows to return to the *Experiment summary* page.
-1. Click the project name to return to the _Assets_ tab.
-2. Select all of the CSV files that you uploaded to the project in Task 4.
-3. Click **Promote to space**.
-4. For the _Target space_, either select an existing space, or follow these steps to create a new space:
-    1. Select **Create a new deployment space**.
-    2. Provide a name for the new space; for example, `AI in sports deployment space`.
-    3. For the _Deployment stage_, select **Testing**.
-    4. For the _watsonx.ai Runtime_, select your **watsonx.ai Runtime** service.
-    5. Click **Create**. The new deployment space is selected for the target space.
-5. Click **Promote**.
-1. Click **Close** to return to the *Assets* tab.
-
-The following image shows the *Promote to space* page with the CSV files selected.
-
-<img src="../watsonx/images/promote-to-space-csv-files.png">
-
-[Back to the top](#top)
-
-## Task 10b: Promote the model to a deployment space
+## Task 10a: Promote the model to a deployment space
 
 1. Back on the _Assets_ tab, open the model.
 2. Review the AI factsheet containing the relevant data about the model.
@@ -519,7 +519,7 @@ The following image shows the *Promote to space* page with the model selected.
 
 [Back to the top](#top)
 
-## Task 10c: Create a model deployment
+## Task 10b: Create a model deployment
 
 1. Click **New deployment**.
 2. For the _Deployment type_, select **Online**.
@@ -533,7 +533,7 @@ The following image shows the model deployment.
 
 [Back to the top](#top)
 
-## Task 10d: Test the deployed model
+## Task 10c: Test the deployed model
 
 1. On the _API reference_ tab, review the endpoints and code snippets to incorporate this deployed model in your application.
 1. Click the **Test** tab.
