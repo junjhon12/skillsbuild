@@ -506,7 +506,7 @@ Now that you saved the best performing model to the project, follow these steps 
 
 1. Close the windows to return to the *Experiment summary* page.
 1. Click the project name to return to the _Assets_ tab.
-1. Open the model.
+1. Open the regression model.
 2. Review the AI factsheet containing the relevant data about the model.
 3. Click the **Promote to space** icon ![Promote to space](../watsonx/images/promote.svg "Promote to space").
 4. For the _Target space_, select the same deployment space where the datasets were promoted.
