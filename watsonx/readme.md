@@ -1,5 +1,5 @@
 # Labs
-This folder includes labs for the watsonx moduleson IBM SkillsBuild.
+This folder includes the following watsonx labs on IBM SkillsBuild:
 
 - [Create a chatbot with IBM Watsonx Assistant](watsonx-assistant-lab.md)
 - [Prompt a foundation model in the Prompt Lab](watsonx-lab.md)
