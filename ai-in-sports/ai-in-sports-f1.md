@@ -122,7 +122,7 @@ When you sign up for a watsonx trial, the watsonx.ai Studio and watsonx.ai Runti
 
    **Tip:** Right-click the following thumbnail image, and open the video in a new tab.
 
-   <a href="https://video.ibm.com/embed/channel/23952663/video/wx-signup">![Sign up video](../images/video-thumbnail-signup.png "Sign up video")</a>
+   <a href="https://video.ibm.com/embed/channel/23952663/video/wx-signup">![Sign up video](images/video-thumbnail-signup.png "Sign up video")</a>
 
 1. Select your region, for example, **Dallas**.
 
