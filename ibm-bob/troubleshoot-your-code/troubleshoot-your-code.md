@@ -1,4 +1,4 @@
-# Use IBM Bob to Troubleshoot and Correct Code in VS Code
+# Use IBM Bob to Troubleshoot Your Code
 
 ## Overview
 
