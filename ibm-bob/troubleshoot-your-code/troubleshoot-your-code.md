@@ -79,7 +79,8 @@ You now see your source code in VS Code, with IBM Bob available alongside it.
 
 <img src="./images/00-intro_page_1.png" alt="Intro" width="50%">
 
-[!Installation notes:] <a name="install"></a>
+[!Important]
+*Installation notes:* <a name="install"></a>
 - Make sure you have VS Code installed, see <a href="https://code.visualstudio.com/docs/introvideos/basics" target="_blank">Getting started with VS Code</a>.  
 - Make sure you have **IBM Bob** <a href="https://bob.ibm.com" target="_blank">installed</a>, and review its <a href="https://bob.ibm.com/docs/ide" target="_blank">key capabilities</a> to understand how you can use it as an AI SDLC partner. 
 
