@@ -42,7 +42,7 @@ You run a fictional business called **Roast Toast Coast Café**. To attract new 
 You write the initial version of the site yourself using basic HTML, CSS, and JavaScript.
 
 <div style="width: 50%;">
-![Roast Toast](images/roast_toast.png)
+![Roast Toast](./images/roast_toast.png)
 </div>
 
 ### Observed issues
