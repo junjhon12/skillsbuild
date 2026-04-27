@@ -42,7 +42,7 @@ You run a fictional business called **Roast Toast Coast Café**. To attract new 
 You write the initial version of the site yourself using basic HTML, CSS, and JavaScript.
 
 <div style="width: 50%;">
-![Roast Toast](images/roast_toast.png "Roast Toast")
+![Roast Toast](images/roast_toast.png)
 </div>
 
 ### Observed issues
@@ -80,7 +80,7 @@ Complete the following steps to prepare your environment:
 You now see your source code in VS Code, with IBM Bob available alongside it.
 
 <div style="width: 50%;">
-![Intro 1](images/00-intro_page_1.png "Intro 1")
+![Intro 1](images/00-intro_page_1.png)
 </div>
 
 Installation notes: <a name="install"></a>
@@ -127,7 +127,7 @@ Examples of issues you might see include:
 For each issue, IBM Bob provides a brief explanation of the impact and a suggested correction.
 
 <div style="width: 50%;">
-![Output](images/03-output_1.png "Output")
+![Output](images/03-output_1.png)
 </div>
 
 ***
@@ -155,7 +155,7 @@ IBM Bob requests permission to modify the file. Select **Approve**.
 VS Code displays the original code and the corrected version side by side. Review the proposed changes carefully.
 
 <div style="width: 50%;">
-![Fix](images/05-fix_errors_save.png "Fix")
+![Fix](images/05-fix_errors_save.png)
 </div>
 
 Typical improvements include:
