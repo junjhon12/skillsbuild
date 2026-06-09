@@ -86,7 +86,7 @@ Complete the prerequisite tasks of [Get started with IBM Bob](get-started-with-i
 - [Task 2: Get player data](#task02)
 - [Task 3: Build the player selector](#task03)
 - [Task 4: Display player statistics](#task04)
-- [Task 5: Understanding Grounded AI (The Most Important Lesson)](#task05)
+- [Task 5: Implement Grounded AI (The Most Important Lesson)](#task05)
 - [Task 6: Build a Team Formation Visualizer](#task06)
 - [Extra Challenges](#challenges)
 - [Summary](#summary)
@@ -579,7 +579,7 @@ Now that you can select a player, let's display their detailed information in a 
 
 <a name="task05"></a>
 
-## Task 5: Understanding Grounded AI (The Most Important Lesson)
+## Task 5: Implement Grounded AI (The Most Important Lesson)
 
 **What you'll learn:** The difference between using external information sources (like Wikipedia) versus using only your own data. This teaches you a critical concept called "grounding."
 
