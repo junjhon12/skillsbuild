@@ -68,10 +68,9 @@ Complete the prerequisite tasks of [Get started with IBM Bob](get-started-with-i
 ## Contents
 
 - [Task 1: Open Bob in your working directory](#task01)
-- [Task 2: Clone the lab repository to your working directory](#task02)
-- [Task 3: Set up your environment](#task03)
-- [Task 4: Start Jupyter Lab to run the notebook](#task04)
-- [Task 5: Clean up when you're done](#task05)
+- [Task 2: Set up your environment](#task02)
+- [Task 3: Start Jupyter Lab to run the notebook](#task03)
+- [Task 4: Clean up when you're done](#task04)
 
 <a name="task01"></a>
 
@@ -81,18 +80,20 @@ Complete the prerequisite tasks of [Get started with IBM Bob](get-started-with-i
 
 Follow these steps to create a directory and open that directory in Bob:
 
-1. Choose a folder location for the lab work.
+1. Download the [ai-in-sports-football-predictor.zip](https://github.com/academic-initiative/skillsbuild/blob/main/ai-in-sports/data/ai-in-sports-football-predictor.zip) from the IBM SkillsBuild GitHub repository to the folder you just created.
 1. In IBM Bob, verify whether the terminal panel is visible. If you don't see a terminal panel, click **Terminal > New Terminal**.
+1. Choose a folder location for the lab work, and use the `cd` command in the terminal panel to move into that folder.
 1. Execute the following commands to create the directory and unzip the repository.
 
    ```
    mkdir football-predictor
    cd football-predictor
-   unzip 
+   unzip ../ai-in-sports-football-predictor.zip
    ```
-
-
-1. Open the above directory.
+1. Open the `football-predictor` folder:
+   1. Click **File > Open Folder**.
+   1. Navigate to the `football-predictor` folder.
+   1. Click **Open**.
 1. Verify that you are in *Ask* mode.
 
    ![Bob modes](images/bob-panel.png)
@@ -106,45 +107,7 @@ Follow these steps to create a directory and open that directory in Bob:
 
 <a name="task02"></a>
 
-## Task 2: Clone the lab repository to your working directory 
-
-Follow these steps to clone the repository that contains all of the lab files:
-
-1. In Bob's chat panel, copy and paste the following prompt:
-
-    ```
-    I am starting a coding lab. Can you clone this repository and tell me what's in it?
-    Repository: https://github.ibm.com/amikumar/soccer-world-cup-2026-lab-1.git
-    Branch: main
-    ```
-
-    **What Bob will do:**
-    - Request your approval to switch into "Agent" mode.
-    - Ask how you want to autneticate with Github. If so refer the following instructions. Note that public repositories may not require any authentication.
-    - Request permission to read the files it created.
-    - Summarize for you the details of the lab and it might even suggest the next step. For the purposes of this lab, you may ignore the suggestion, proceed to next step below.
-
-1. If Bob asks about authentication, follow these steps:
-    1. Copy and paste the following prompt: 
-
-       ```
-       I have a personal access token
-       ```
-
-    1. Replace your username and access token in the following prompt, and then submit the prompt to Bob:
-
-        ```
-        [YOUR_USERNAME]
-        [YOUR_PERSONAL_ACCESS_TOKEN]
-        ```
-
-1. If you enter any problems, Ask Bob for help.
-
-[Back to the top](#top)
-
-<a name="task03"></a>
-
-## Task 3: Set up your environment
+## Task 2: Set up your environment
 
 Follow these steps to set up your environment to complete this lab:
 
@@ -163,9 +126,9 @@ Great! Now please setup the necessary environment for this lab, but don't instal
 
 [Back to the top](#top)
 
-<a name="task04"></a>
+<a name="task03"></a>
 
-## Task 4: Start Jupyter Lab to run the notebook
+## Task 3: Start Jupyter Lab to run the notebook
 
 1. In Bob's chat panel, copy and paste the following prompt:
 
@@ -194,9 +157,9 @@ write code to test the model to predict the outcome of a matchup between Brazil 
 
 [Back to the top](#top)
 
-<a name="task05"></a>
+<a name="task04"></a>
 
-## Task 5: Clean up when you're done
+## Task 4: Clean up when you're done
 
 When you've finished the lab, copy and paste the following prompt into Bob's chat panel:
 
