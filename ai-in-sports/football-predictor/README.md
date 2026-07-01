@@ -1,102 +1,225 @@
-# 🚀 Your First Lab with IBM Bob - Let's Build Something Amazing!
+![Predict the Outcome of a Football Match with IBM Bob](images/predict-football-title.png)
 
-**Welcome to an exciting learning journey!** Whether you're brand new to coding or just meeting Bob for the first time, this guide will help you get Bob up and running. Once you've successfully connected with Bob, you'll be ready to dive into your hands-on lab. Let's get started!
+> **From "I don't code" to "I built an AI app!" - Bob makes it happen**
 
----
+## About IBM Bob - Your AI coding partner
 
-## 📱 What You'll Need
+IBM Bob lets you:
 
-Before starting, make sure you have:
-- ✅ A computer (Mac or Windows)
-- ✅ Internet connection
-- ✅ The lab link (GitHub URL) from your instructor
-- ✅ Bob installed on your computer (we'll help you with this!)
+- **Write code for you** - Just describe what you need, Bob writes it.
+- **Understand your project** - Bob reads and comprehends your entire codebase.
+- **Debug errors** - Paste an error message, Bob fixes it.
+- **Explain concepts** - Ask Bob to explain any code or concept.
+- **Work in any language** - Write in Python, JavaScript, Java, and more.
+- **Set up environments** - Bob handles installations and configurations.
 
----
+## Learning objectives
 
-## 🚀 Step 1: Install Bob (One-Time Setup)
+After completing this lab, you should be able to:
+- Prompt IBM Bob to generate Python code for data science workflows.
+- Build and evaluate a machine learning model for sports prediction.
+- Apply feature engineering techniques to historical sports data.
+- Train and evaluate the machine learning model.
 
-If you don't have Bob installed yet:
+**You don't need to be a coding expert** - Bob handles the technical details while you focus on learning and building!
 
-1. **Go to the IBM website:**
-   - Open your web browser
-   - Visit the Bob download page (your instructor should have provided this link)
-   - Or search for "IBM Bob AI Assistant download"
+## About this lab
 
-2. **Download Bob:**
-   - Click the download button for your computer type (Mac or Windows)
-   - Wait for the download to complete
+In this lab, you'll build a **complete machine learning application** that predicts soccer match winners using data analysis and machine learning in Jupyter notebooks.
 
-3. **Install Bob:**
-   - Find the downloaded file (usually in your Downloads folder)
-   - Double-click it to start installation
-   - Follow the on-screen instructions (click "Next" or "Continue")
-   - Wait for installation to finish
+Bob writes all the code for you! You will:
+- Read what each step does.
+- Copy the prompt to Bob.
+- Paste Bob's code and run it to analyze the data and build a machine learning model.
+- Review the results.
 
-4. **Open Bob:**
-   - **Windows:** Click Start menu, type "Bob", click to open
-   - **Mac:** Click magnifying glass (Spotlight), type "Bob", click to open
+No deep Python, machine learning, or data science knowledge needed - Leave that to Bob!
 
----
+## About the dataset
 
-## 💬 Step 2: Start Your First Conversation with Bob
+This lab uses the datasets from [Kaggle dataset: International football results from 1872 to 2026](https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017).
 
-Once Bob is open, you'll see a chat window where you can type messages. This is where the magic happens! Let's say hello to your new AI coding buddy.
+This dataset includes 49,016 results of international football matches starting from the very first official match in 1872 up to 2026. The matches range from World Cup to Wild Cup to regular friendly matches. The matches are strictly men's full internationals and the data does not include Olympic Games or matches where at least one of the teams was the nation's B-team, U-23 or a league select team.
 
-### What to Type:
+The results.csv dataset includes the following columns:
 
-Try something fun and friendly! Here's what to say:
+- date - date of the match
+- home_team - the name of the home team
+- away_team - the name of the away team
+- home_score - full-time home team score including extra time, not including penalty-shootouts
+- away_score - full-time away team score including extra time, not including penalty-shootouts
+- tournament - the name of the tournament
+- city - the name of the city/town/administrative unit where the match was played
+- country - the name of the country where the match was played
+- neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
+
+## Estimated time
+
+**60-90 minutes**
+
+## Prerequisites
+
+**Tip:** Right-click the following link, and open the page in a new tab.
+
+Complete the prerequisite tasks of [Get started with IBM Bob](get-started-with-ibm-bob.md)
+
+<a name="top"></a>
+
+## Contents
+
+- [Task 1: Open Bob in your working directory](#task01)
+- [Task 2: Clone the lab repository to your working directory](#task02)
+- [Task 3: Set up your environment](#task03)
+- [Task 4: Start Jupyter Lab to run the notebook](#task04)
+- [Task 5: Clean up when you're done](#task05)
+
+<a name="task01"></a>
+
+## Task 1: Open Bob in your working directory
+
+**Note:** This is a manual step, Bob can't do it for security reasons.
+
+Follow these steps to create a directory and open that directory in Bob:
+
+1. Decide a location and name for directory for the lab work.
+2. Create the directory.
+3. Launch Bob, and open the above directory.
+1. Verify that you are in *Ask* mode.
+
+   ![Bob modes](images/bob-panel.png)
+
+1. Copy and paste the following prompt to Bob and review the response:
+    ```
+    Hey Bob, What's my current working directory?
+    ```
+
+[Back to the top](#top)
+
+<a name="task02"></a>
+
+## Task 2: Clone the lab repository to your working directory 
+
+Follow these steps to clone the repository that contains all of the lab files:
+
+1. In Bob's chat panel, copy and paste the following prompt:
+
+    ```
+    I am starting a coding lab. Can you clone this repository and tell me what's in it?
+    Repository: https://github.ibm.com/amikumar/soccer-world-cup-2026-lab-1.git
+    Branch: main
+    ```
+
+    **What Bob will do:**
+    - Request your approval to switch into "Code" mode.
+    - Ask how you want to autneticate with Github. If so refer the following instructions. Note that public repositories may not require any authentication.
+    - Request permission to read the files it created.
+    - Summarize for you the details of the lab and it might even suggest the next step. For the purposes of this lab, you may ignore the suggestion, proceed to next step below.
+
+1. If Bob asks about authentication, follow these steps:
+    1. Copy and paste the following prompt: 
+
+       ```
+       I have a personal access token
+       ```
+
+    1. Replace your username and access token in the following prompt, and then submit the prompt to Bob:
+
+        ```
+        [YOUR_USERNAME]
+        [YOUR_PERSONAL_ACCESS_TOKEN]
+        ```
+
+1. If you enter any problems, Ask Bob for help.
+
+[Back to the top](#top)
+
+<a name="task03"></a>
+
+## Task 3: Set up your environment
+
+Follow these steps to set up your environment to complete this lab:
+
+In Bob's chat panel, copy and paste the following prompt:
 
 ```
-Hey Bob! I'm excited to learn coding with you today! 🚀
+Great! Now please setup the necessary environment for this lab, but don't install the packages that go inside Jupyter Lab - I'll do that part while following the lab.
 ```
 
-### What Happens Next:
-1. Bob will greet you back! 👋
-2. Bob will introduce itself and explain how it can help
-3. You'll see that Bob is friendly, helpful, and ready to assist
+**What Bob will do:**
+- Install Jupyter Lab itself (the application).
+- Set up the basic environment.
+- Prepare everything needed to run the lab.
 
-**💡 Pro tip:** Talk to Bob like you would talk to a helpful friend. Be natural, ask questions, and don't worry about being too formal!
+**Note:** Bob will NOT install the lab-specific packages (like pandas, scikit-learn, etc.) - you'll install those yourself by following the instructions in the Jupyter notebook.
 
-**⏱️ Bob usually responds within seconds!**
+[Back to the top](#top)
 
----
+<a name="task04"></a>
 
-## ✅ Step 3: Confirm Bob is Working
+## Task 4: Start Jupyter Lab to run the notebook
 
-Once Bob responds to your message, you've successfully:
-- ✅ Installed Bob
-- ✅ Opened Bob
-- ✅ Sent your first message
-- ✅ Received a response from Bob
+1. In Bob's chat panel, copy and paste the following prompt:
 
-**Congratulations! You're now ready to start your lab work!** 🎉
+   ```
+   Please run Jupyter Lab for me so that I can start working on the lab. Once ready, give me the URL that I should open in a browser.
+   ```
 
----
+   **What Bob will do:**
+   - Ask your permission to run the command to start Jupyter Lab.
+   - Start the Jupyter Lab server.
+   - Provide you with the access URL. (looks like:  http://localhost:8889/lab?token=be593c982208307739c1ca7501d09536a0c5de8a658edc07)
+     **Note:** You may need to click **Proced while running** to get the clean URL info.
 
-## 📖 Next Steps: Start Your Lab
+1. Click the link that Bob provides (or copy-paste it into your browser). Your browser will open Jupyter Lab.
+1. Find and open the lab notebook (`corelab.ipynb`).
+1. Follow the instructions in the notebook. Work through each cell, asking Bob for help when needed.
 
-Now that Bob is set up and responding, it's time to begin your actual lab work.
+**Tip:** Keep Bob's chat open while you work through the lab. You can ask Bob questions, request code for specific cells, or get help with errors!
 
-**👉 Open and read [`LAB_GUIDE.md`](LAB_GUIDE.md) to continue with your lab exercises.**
+<!-- From Sharyn: In the notebook, we need to tell the student to click save in Bob to save the py files with the code, or we can we tell bob to automatically save the py file with the code? -->
 
-The `LAB_GUIDE.md` file contains:
-- Step-by-step instructions for working through your lab
-- How to interact with Bob for each exercise
-- What you'll build and how Bob helps you
-- How to clean up when you're done
+<!-- From Sharyn: Should we have a final cell that predicts the outcome a specific matchup? Such as Brazil vs Spain? 
+```
+write code to test the model to predict the outcome of a matchup between Brazil and Spain?
+-->
 
----
+[Back to the top](#top)
 
-## 🎉 You're Ready!
+<a name="task05"></a>
 
-Remember:
-- **Bob is your AI coding partner** - don't hesitate to ask questions
-- **Take it one step at a time** - you've already completed the setup!
-- **It's okay to ask for help** - your instructor is there to support you
+## Task 5: Clean up when you're done
 
-**Now open [`LAB_GUIDE.md`](LAB_GUIDE.md) and start your lab!** 🚀
+When you've finished the lab, copy and paste the following prompt into Bob's chat panel:
 
----
+```
+I'm all done with the lab! Please stop Jupyter Lab and clean up for me.
+```
 
-*This guide focused on getting Bob set up. For lab-specific instructions, see [`LAB_GUIDE.md`](LAB_GUIDE.md).*
+**What Bob will do:**
+- Stop the Jupyter Lab server.
+- Clean up any running processes.
+- Keep your saved work.
+
+[Back to the top](#top)
+
+<a name="summary"></a>
+
+## Summary
+
+In this lab, you used IBM Bob to build a **complete machine learning application** that predicts soccer match winners using data analysis and machine learning in Jupyter notebooks.
+
+### What you learned
+
+Now that you have completed this lab, you should be able to:
+
+- Prompt Bob to help you write machine learning code.
+- Debug any issues you encounter.
+- Run the code generated by Bob in Jupyter Lab.
+
+[Back to the top](#top)
+
+<a name="additional-resources"></a>
+
+## Additional resources
+
+- [IBM Bob documentation](https://bob.ibm.com/docs)
