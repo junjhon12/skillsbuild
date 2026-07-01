@@ -111,11 +111,17 @@ Follow these steps to create a directory and open that directory in Bob:
 
 Follow these steps to set up your environment to complete this lab:
 
-In Bob's chat panel, copy and paste the following prompt:
+1. In Bob's chat panel, copy and paste the following prompt:
 
-```
-Great! Now please setup the necessary environment for this lab, but don't install the packages that go inside Jupyter Lab - I'll do that part while following the lab.
-```
+   ```
+   Great! Now please setup the necessary environment for this lab, 
+   but don't install the packages that go inside Jupyter Lab.
+   I'll do that part while following the lab.
+   ```
+
+1. Click **Approve once** to switch to *Agent* mode.
+
+1. Click **Approve once** repeatedly when prompted to run the commands to set up the environment.
 
 **What Bob will do:**
 - Install Jupyter Lab itself (the application).
@@ -133,27 +139,20 @@ Great! Now please setup the necessary environment for this lab, but don't instal
 1. In Bob's chat panel, copy and paste the following prompt:
 
    ```
-   Please run Jupyter Lab for me so that I can start working on the lab. Once ready, give me the URL that I should open in a browser.
+   Please run Jupyter Lab for me so that I can start working on the lab.
+   Once ready, give me the URL that I should open in a browser.
    ```
+1. If prompted, confirm that you want to start Jupyter Lab.
 
-   **What Bob will do:**
-   - Ask your permission to run the command to start Jupyter Lab.
-   - Start the Jupyter Lab server.
-   - Provide you with the access URL. (looks like:  http://localhost:8889/lab?token=be593c982208307739c1ca7501d09536a0c5de8a658edc07)
-     **Note:** You may need to click **Proced while running** to get the clean URL info.
+1. Click **Approve once** to run the command to start Jupyter Lab.
+
+   **Note:** You may need to click **Proced while running** to get the clean URL info.
 
 1. Click the link that Bob provides (or copy-paste it into your browser). Your browser will open Jupyter Lab.
-1. Find and open the lab notebook (`corelab.ipynb`).
+1. If the `corelab.ipynb` notebook does not open, find and open the lab notebook.
 1. Follow the instructions in the notebook. Work through each cell, asking Bob for help when needed.
 
 **Tip:** Keep Bob's chat open while you work through the lab. You can ask Bob questions, request code for specific cells, or get help with errors!
-
-<!-- From Sharyn: In the notebook, we need to tell the student to click save in Bob to save the py files with the code, or we can we tell bob to automatically save the py file with the code? -->
-
-<!-- From Sharyn: Should we have a final cell that predicts the outcome a specific matchup? Such as Brazil vs Spain? 
-```
-write code to test the model to predict the outcome of a matchup between Brazil and Spain?
--->
 
 [Back to the top](#top)
 
