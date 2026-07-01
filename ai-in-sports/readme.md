@@ -4,5 +4,5 @@ This repository includes labs related to AI in sports. Currently available labs 
 - [Lab: AI in Sports - NCAA Basketball Tournament](ai-in-sports-ncaa.md)
 - [Lab: AI in Sports - Formula 1 Racing](ai-in-sports-f1.md)
 - [Lab: AI in Sports - Build a Football Player Dashboard](football/ai-in-sports-football-player-dashboard.md)
-- [Lab: AI in Sports - Predict the Outcome of a Football Match](football-predictor/ai-in-sports-football-predictions.md)
+- [Lab: AI in Sports - Predict the Outcome of a Football Match](football-predictor/ai-in-sports-football-predictor.md)
 - [Lab: AI in Sports - Build a Tennis Match Predictor](tennis/ai-in-sports-tennis.md)
