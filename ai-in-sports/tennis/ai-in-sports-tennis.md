@@ -175,7 +175,8 @@ Follow these steps to set up the project in IBM Bob.
 1. In IBM Bob, locate the chat side panel.
 1. In the Bob chat side panel, select **Agent** mode.
 
-   ![Agent mode](images/bob-panel.png)
+   <img src="images/bob-panel.png" alt="Modes panel" height="50%">
+
 1. In IBM Bob, click **File > Open Folder**, select the `tennis-predictor` folder, and click **Open**.
 1. Prompt Bob to confirm that you have Python installed.
 
