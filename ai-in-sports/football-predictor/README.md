@@ -110,7 +110,7 @@ Follow these steps to clone the repository that contains all of the lab files:
     ```
 
     **What Bob will do:**
-    - Request your approval to switch into "Code" mode.
+    - Request your approval to switch into "Agent" mode.
     - Ask how you want to autneticate with Github. If so refer the following instructions. Note that public repositories may not require any authentication.
     - Request permission to read the files it created.
     - Summarize for you the details of the lab and it might even suggest the next step. For the purposes of this lab, you may ignore the suggestion, proceed to next step below.
