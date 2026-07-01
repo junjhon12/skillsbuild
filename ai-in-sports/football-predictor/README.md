@@ -81,9 +81,18 @@ Complete the prerequisite tasks of [Get started with IBM Bob](get-started-with-i
 
 Follow these steps to create a directory and open that directory in Bob:
 
-1. Decide a location and name for directory for the lab work.
-2. Create the directory.
-3. Launch Bob, and open the above directory.
+1. Choose a folder location for the lab work.
+1. In IBM Bob, verify whether the terminal panel is visible. If you don't see a terminal panel, click **Terminal > New Terminal**.
+1. Execute the following commands to create the directory and unzip the repository.
+
+   ```
+   mkdir football-predictor
+   cd football-predictor
+   unzip 
+   ```
+
+
+1. Open the above directory.
 1. Verify that you are in *Ask* mode.
 
    ![Bob modes](images/bob-panel.png)
